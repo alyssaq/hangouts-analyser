@@ -32,7 +32,7 @@
 
       <div class="jumbotron">
         <div id="hello"></div>
-        <h1>'Allo, 'Allo!!</h1>
+        <h1>'Allo, 'Allo!</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
         <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
       </div>
@@ -60,17 +60,20 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <script src="//cdn.auth0.com/w2/auth0-widget-5.2.min.js"></script>
+    
     <!-- build:js scripts/vendor.js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/backbone-session/backbone-session.js"></script>
+    <script src="bower_components/auth0.js/build/auth0.min.js"></script>
     <!-- endbuild -->
-
-    <script src="//cdn.auth0.com/w2/auth0-widget-5.2.min.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/main.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/templates.js"></script>
+    <script src="scripts/session.js"></script>
     <script src="scripts/views/summary.js"></script>
     <!-- endbuild -->
 </body>
